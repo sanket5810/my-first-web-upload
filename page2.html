@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Typing Speed Test</title>
+    <link rel="stylesheet" href="webcss.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Number Typing Speed Test</h1>
+        <hr>
+        <div id="numberdisplay" class="number-box">
+
+            Loading number...
+        </div>
+
+        <input type="text" id="typinginput" placeholder="Start typing here..." autocomplete="off">
+
+        <div class="stats">
+
+            <p>Time: <span id="timer">60</span>s</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="Accuracy">0</span></p>
+            <p>Numbers Typed: <span id="chars"></span></p>
+
+        </div>
+        <hr>
+        <div class="time-buttons">
+
+            <button class="time-btn" onclick="setTime(15)">15s</button>
+            <button class="time-btn" onclick="setTime(30)">30s</button>
+            <button class="time-btn" onclick="setTime(60)">60s</button>
+            <button class="time-btn" onclick="setTime(90)">90s</button>
+            <button class="time-btn" onclick="setTime(120)">120s</button>
+            <button class="time-btn" onclick="setTime(150)">150s</button>
+            <button class="time-btn" onclick="setTime(180)">180s</button>
+            <button class="time-btn" onclick="setTime(240)">240s</button>
+            <button class="time-btn" onclick="setTime(300)">300s</button>
+
+        </div>
+
+        <hr>
+        <div class="mode-buttons">
+            <button id="beginnerBtn" class="mode-btn" onclick="beginnerMode()">Beginner Mode</button>
+            <button id="normalBtn" class="mode-btn" onclick="normalMode()">Normal</button>
+            <button id="hardBtn" class="mode-btn" onclick="hardMode()">Hard Mode</button>
+
+        </div>
+
+        <hr>
+
+        <div class="actions">
+
+            <button id="restart-btn">Restart Test</button>
+            <a href="web.html" class="button-link"><button class="next-btn">Text Typing Page</button></a>
+            <a href="gmail.html" class="button-link"><button class="next-btn">Gmail Typing Page</button></a>
+
+        </div>
+        <script src="java.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gmail Typing Practice</title>
+    <link rel="stylesheet" href="gg.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="email-section">
+
+            <!-- Example Email -->
+            <div class="email-box">
+                <div class="gmail-logo">
+                    <img src="logo_gmail.png">
+                </div>
+
+                <div class="header">Demo Message</div>
+
+                <div class="field">
+                    <span>To:</span>
+                    <input id="sampleTo" readonly>
+                </div>
+
+                <div class="field">
+                    <span>Subject:</span>
+                    <input id="sampleSubject" readonly>
+                </div>
+
+                <div id="sampleMessage" class="message"></div>
+
+
+                <button>Send</button>
+
+                <div class="attachments">
+
+                    <button>📎 Attach</button>
+                    <div id="sampleAttachments" class="attachments"></div>
+
+                    <div id="demofileOptions" class="file-options"></div>
+
+                    <div></div>
+
+                </div>
+            </div>
+
+
+            <!-- Typing Practice -->
+            <div class="email-box">
+                <div class="gmail-logo">
+                    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png">
+                </div>
+                <div class="header">Practice Message</div>
+
+                <div class="field">
+                    <span>To:</span>
+                    <input id="typingTo" type="text">
+                </div>
+
+                <div class="field">
+                    <span>Subject:</span>
+                    <input id="typingSubject" type="text">
+                </div>
+
+                <textarea id="typingMessage" placeholder="Type message..."></textarea>
+                <button id="sendBtn">Send</button>
+
+                <div class="attachments">
+
+                    <button id="attachBtn">📎 Attach</button>
+
+                    <div id="fileOptions"></div>
+
+                    <div id="userAttachments" class="file-options"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="stats">
+
+            <div>Time: <span id="timer">60</span>s</div>
+
+            <div>WPM: <span id="wpm">0</span></div>
+
+            <div>Accuracy: <span id="accuracy">100</span>%</div>
+
+            <div id="resultScreen" class="result-screen">
+
+                <h2>Test Completed 🎉</h2>
+
+                <p>⏱ Time Used: <span id="resultTime"></span>s</p>
+                <p>⚡ WPM: <span id="resultWpm"></span></p>
+                <p>🎯 Accuracy: <span id="resultAccuracy"></span>%</p>
+                <p>📎 Attachments: <span id="resultAttachments"></span></p>
+
+                <button id="restartBtn">Restart</button>
+
+            </div>
+            <div class="time-buttons">
+
+                <button class="time-btn" onclick="setTime(60)">60s</button>
+                <button class="time-btn" onclick="setTime(90)">90s</button>
+                <button class="time-btn" onclick="setTime(120)">120s</button>
+                <button class="time-btn" onclick="setTime(180)">180s</button>
+                <button class="time-btn" onclick="setTime(300)">300s</button>
+            </div>
+            <button id="restartTestBtn">Restart Test</button>
+            <a href="page2.html" class="button-link"><button class="next-btn">Number Typing Page</button></a>
+            <a href="web.html" class="button-link"><button class="next-btn">Text Typing Page</button></a>
+
+        </div>
+
+
+        <script src="ggmail.js"></script>
+
+</body>
+
+</html>
